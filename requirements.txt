@@ -3,3 +3,4 @@ gunicorn
 psycopg2-binary
 dj-database-url
 whitenoise
+tensorflow-cpu==2.12.0
