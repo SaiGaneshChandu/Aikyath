@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tech Events</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin: 30px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,123,255,0.3);
+            background: linear-gradient(45deg, #007BFF, #0056b3);
+            color: white;
+        }
+
+        .card a {
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .card:hover a {
+            color: white;
+        }
+
+        .home-btn {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .home-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+            border-color: white;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .card-container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>🚀 Tech Events</h2>
+    
+    <div class="card-container">
+        <div class="card"><a href="/portfolio/">Portfolio</a></div>
+        <div class="card"><a href="/poster/">Poster Presentation</a></div>
+        <div class="card"><a href="/projectexpo/">Project Expo</a></div>
+        <div class="card"><a href="/startup/">Startup Ideas</a></div>
+        <div class="card"><a href="/livecoding/">Live Coding</a></div>
+        <div class="card"><a href="/debugging/">Debugging</a></div>
+        <div class="card"><a href="/quiz/">Quiz</a></div>
+        <div class="card"><a href="/syntax/">Syntax Scavenger</a></div>
+    </div>
+
+   <a href="/home/" class="home-btn">🏠 Home</a>
+</body>
+</html>

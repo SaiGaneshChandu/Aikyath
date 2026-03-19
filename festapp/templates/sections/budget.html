@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budget - AIKYATH 2026</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial Black', 'Arial', sans-serif;
+            margin: 0;
+            padding: 15px;
+            text-align: center;
+            background: linear-gradient(-45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3, #54a0ff);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* REDUCED HEADINGS */
+        h2 {
+            color: #fff !important;
+            font-size: clamp(1.8em, 5vw, 2.4em);
+            font-weight: 900;
+            text-shadow: 
+                3px 3px 0px #000,
+                1px 1px 0px #000,
+                0 0 15px rgba(255,255,255,0.8);
+            margin: 25px 0 15px 0;
+            letter-spacing: 2px;
+            padding: 15px 30px;
+            background: rgba(0,0,0,0.7);
+            border: 3px solid #fff;
+            border-radius: 40px;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-transform: uppercase;
+        }
+
+        h3 {
+            color: #fff !important;
+            font-size: clamp(1.4em, 4.5vw, 1.9em);
+            font-weight: 900;
+            text-shadow: 
+                2px 2px 0px #000,
+                1px 1px 0px #000,
+                0 0 10px rgba(255,255,255,0.9);
+            margin: 30px 0 20px 0;
+            letter-spacing: 2px;
+            padding: 12px 25px;
+            background: rgba(0,0,0,0.8);
+            border: 2px solid #fff;
+            border-radius: 35px;
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            text-transform: uppercase;
+        }
+
+        .desc-box {
+            background: rgba(255, 255, 255, 0.98);
+            color: #333;
+            padding: 25px;
+            border-radius: 20px;
+            max-width: 900px;
+            margin: 0 auto 30px auto;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            text-align: left;
+        }
+
+        .desc-box ul {
+            margin: 0;
+            padding-left: 25px;
+            list-style: none;
+        }
+
+        .desc-box li {
+            position: relative;
+            padding: 10px 0 10px 30px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .desc-box li::before {
+            content: '✨';
+            position: absolute;
+            left: 0;
+            top: 10px;
+        }
+
+        .desc-box li:last-child {
+            border-bottom: none;
+        }
+
+        /* ONE CARD PER LINE, FULL WIDTH */
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 15px;
+            padding: 20px 10px;
+            align-items: stretch;
+        }
+
+        .card {
+            width: 100%;
+            min-height: 140px;
+            padding: 20px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            line-height: 1.4;
+            transition: 0.3s;
+            border: 1px solid rgba(255,255,255,0.6);
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .card strong {
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .home-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            max-width: 200px;
+        }
+
+        .home-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Responsive adjustments (optional) */
+        @media (max-width: 768px) {
+            .card {
+                padding: 15px 12px;
+                min-height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Budget Management</h2>
+<div class="desc-box">
+<ul>
+    <li>Budget for AIKYATH 2026 is planned and managed by the CRS (Class Representatives) team</li>
+    <li>CR's are responsible for collecting money from students in an organized and responsible manner</li>
+    <li>All collected funds are handled with proper transparency and accountability</li>
+    <li>Expenses are planned carefully for events, materials, prizes, and logistics</li>
+    <li>CRS team monitors all spending and avoids unnecessary expenses</li>
+    <li>Maintains proper financial records for every transaction</li>
+    <li>Coordinates with different event teams for smooth budget usage</li>
+    <li>Handles sponsorship funds and additional income sources efficiently</li>
+    <li>Ensures proper balance between income and expenses</li>
+    <li>Overall, CRS ensures every event is conducted successfully within the allocated budget</li>
+</ul>
+</div>
+
+
+<h3>Coordinators</h3>
+
+<div class="card-container">
+    <div class="card">
+        <strong>Name: Ch.Sai Ganesh</strong><br>
+        Section: MCA-A<br>
+        Phone: 9697912555<br>
+        Reg No: 24A21F0028
+    </div>
+    <div class="card">
+        <strong>Name: bbbbb</strong><br>
+        Section: bbbbb<br>
+        Phone: bbbbb<br>
+        Reg No: bbbbb
+    </div>
+    <div class="card">
+        <strong>Name: ccccc</strong><br>
+        Section: ccccc<br>
+        Phone: ccccc<br>
+        Reg No: ccccc
+    </div>
+    <div class="card">
+        <strong>Name: ddddd</strong><br>
+        Section: ddddd<br>
+        Phone: ddddd<br>
+        Reg No: ddddd
+    </div>
+    <div class="card">
+        <strong>Name: eeeee</strong><br>
+        Section: eeeee<br>
+        Phone: eeeee<br>
+        Reg No: eeeee
+    </div>
+    <div class="card">
+        <strong>Name: fffff</strong><br>
+        Section: fffff<br>
+        Phone: fffff<br>
+        Reg No: fffff
+    </div>
+    <div class="card">
+        <strong>Name: ggggg</strong><br>
+        Section: ggggg<br>
+        Phone: ggggg<br>
+        Reg No: ggggg
+    </div>
+    <div class="card">
+        <strong>Name: hhhhh</strong><br>
+        Section: hhhhh<br>
+        Phone: hhhhh<br>
+        Reg No: hhhhh
+    </div>
+    <div class="card">
+        <strong>Name: iiiii</strong><br>
+        Section: iiiii<br>
+        Phone: iiiii<br>
+        Reg No: iiiii
+    </div>
+    <div class="card">
+        <strong>Name: jjjjj</strong><br>
+        Section: jjjjj<br>
+        Phone: jjjjj<br>
+        Reg No: jjjjj
+    </div>
+    <div class="card">
+        <strong>Name: kkkkk</strong><br>
+        Section: kkkkk<br>
+        Phone: kkkkk<br>
+        Reg No: kkkkk
+    </div>
+    <div class="card">
+        <strong>Name: lllll</strong><br>
+        Section: lllll<br>
+        Phone: lllll<br>
+        Reg No: lllll
+    </div>
+    <div class="card">
+        <strong>Name: mmmmm</strong><br>
+        Section: mmmmm<br>
+        Phone: mmmmm<br>
+        Reg No: mmmmm
+    </div>
+    <div class="card">
+        <strong>Name: nnnnn</strong><br>
+        Section: nnnnn<br>
+        Phone: nnnnn<br>
+        Reg No: nnnnn
+    </div>
+</div>
+
+<a href="/home/" class="home-btn">🏠 Home</a>
+
+</body>
+</html>
